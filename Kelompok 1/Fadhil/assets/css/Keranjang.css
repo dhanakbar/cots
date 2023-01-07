@@ -1,0 +1,131 @@
+ 
+.custom-navbar{
+    background-color: #de0606;
+	color: #FFFFFF ;
+	display: flex;
+	width: 100%;
+    font-family: 'Lucida Sans';
+    
+    padding: 15px 30px;
+}
+
+.custom-navbar-brand {
+	color: white;
+	padding: 1px 1px;
+	border-radius: 3px;
+	margin: 0 2, 5px;
+    font-size: 30px;
+}
+
+nav ul li a{
+	color: #FFFFFF;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin: 0 2,5px;
+}
+
+nav ul li a:hover{
+	background-color: #FFFFFF;
+	color: #de0606 ;
+}
+
+nav ul li a:focus{
+	background-color: #FFFFFF;
+	color: #ffffff ;
+}
+
+
+
+
+.custom-main{
+    display: flex;
+    justify-content: center;
+    align-items: center ;  
+    min-height: 50vh;
+}
+
+.alert-custom{
+    background-color: #ddff45 !important;
+}
+header{
+	background-color: #de0606!important;
+	color: #FFFFFF !important;
+	padding: 30px!important;
+	text-align: center!important;
+	font-size: 50px!important;
+	font-weight: 200px!important;
+}
+
+header h1,h3, h2{
+	font-weight: lighter!important;
+	color: rgb(255, 255, 255)!important;
+    font-size: 50px!important;
+}
+
+
+footer {
+	background-color: white !important;
+	color: white !important;
+	text-align: center !important;
+	font-family: 'arial'!important;
+	padding-top: 30px !important;
+}
+
+.containerFooter {
+	display: grid!important;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+	gap: 10px !important;
+	margin: 10px !important;
+}
+
+.containerFooter .logo img  {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.containerFooter .logo h4 {
+	color: maroon !important;
+}
+
+.containerFooter .pembayaran h4 {
+	color: maroon !important;
+}
+
+.mediaSosial h4 {
+	color: maroon !important;
+}
+
+.mediaSosial img {
+	display: inline !important;
+	align-items: center !important;
+	padding: 10px !important;
+	width: 60px !important;
+	height: 60px !important;
+}
+
+.row {
+	display :flex !important;
+}
+
+.col {
+	margin: 1% !important;
+	text-align: center;
+}
+
+.col2 {
+	margin: 1%;
+	text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+	.col{
+		flex: 50%;
+		padding: 11px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.col{
+		flex: 100%;
+		padding: 11px;
+	}
+}

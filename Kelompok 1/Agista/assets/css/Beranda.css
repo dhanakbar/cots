@@ -1,0 +1,538 @@
+/* Body */
+
+body {
+	background-color: #de0606;
+	overflow-x: hidden;
+}
+
+/* Header */
+header {
+	text-align: center;
+	color: white;
+	
+}
+
+/* Navigasi */
+
+nav {
+	background-color: #de0606;
+	display: flex;
+	width: 100%;
+	padding: 15px 30px;
+	align-items: center;
+	font-family: 'Lucida Sans';
+	position: fixed;
+	z-index: 1;
+}
+
+nav ul {
+	flex: auto;
+	text-align: right;
+}
+
+nav h2 ul a {
+	color: white;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin: 0 2, 5px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: white;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin: 0 2, 5px;
+}
+
+nav ul li a:hover {
+	background-color: #FFFFFF;
+	color: #de0606;
+}
+
+nav ul li a:focus {
+	background-color: white;
+	color: white;
+}
+
+
+/* hamburger menu */
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+}
+
+.menu-toggle input {
+	position: absolute;
+	width: 40px;
+	height: 28px;
+	bottom: -9px;
+	left: -10px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.menu-toggle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: white;
+	border-radius: 3px;
+	transition: all 0.5s;
+
+}
+
+/* hamburger menu animation */
+
+.menu-toggle span:nth-child(2) {
+	transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4) {
+	transform-origin: 0 100%;
+
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+	background-color: white;
+	transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+	background-color: white;
+	transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+	opacity: 0;
+	transform: scale(0);
+}
+
+/* SLIDE HEADER */
+
+.container .slider .slick-slide {
+	position: inherit;
+}
+
+.container .slider .slick-slide img {
+	width: 100%;
+	border-radius: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* JUDUL HEADER */
+
+header {
+	background-color: #de0606;
+	color: white;
+	padding: 50px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 200px;
+	font-family: 'Lucida Sans';
+}
+
+header h6 {
+	color: #ddff45;
+	font-size: 30px;
+}
+
+/* PENCARIAN */
+
+form {
+	width: 500px;
+	margin: 0px auto;
+}
+
+.search {
+	padding: 8px 15px;
+	background: white;
+	color: black;
+	border: 0px solid #dbdbdb;
+	border-radius: 40px;
+}
+
+.button {
+	padding: 6px 15px;
+	left: -8px;
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	border-radius: 40px;
+}
+
+.button:hover {
+	background-color: #ddff45;
+	color: black;
+}
+
+main h2 {
+	color: white;
+	font-size: 20px;
+	font-weight: 100;
+	margin: 10px;
+	font-family: 'Lucida Sans';
+}
+
+main h3 ul a {
+	color: #de0606;
+	font-family: 'Lucida Sans';
+}
+
+/* CATEGORY */
+
+.services {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 10px;
+	margin: 10px;
+}
+
+.service {
+	background-color: maroon;
+	padding: 15px;
+	text-align: center;
+}
+
+.service .icon {
+	height: 100px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.service h3 ul a {
+	font-size: 10;
+	color: #ddff45;
+}
+
+.service h3 ul a:hover {
+	color: white;
+}
+
+.service p {
+	font-weight: 200;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: white;
+}
+
+/* BEST SELLER */
+
+.palingLaku {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+	margin: 0;
+	background-color: maroon;
+}
+
+.palingLaku .pict img {
+	height: 500px;
+	width: 500px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	margin-left: 100px;
+	display: block;
+	border-radius: 30px;
+	box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.palingLaku h1 {
+	font-size: 80px;
+	margin-top: 70px;
+	font-family: 'arial';
+	color: yellow;
+}
+
+.palingLaku h4 {
+	font-family: 'arial';
+	color: yellow;
+	font-size: 40px;
+}
+
+.post{
+	color: white;
+}
+
+.post h5 {
+	color: white;
+	font-weight: lighter;
+	font-family: 'arial';
+}
+
+.more {
+	display: none;
+	color: white;
+	font-weight: lighter;
+	font-family: 'arial';
+	font-size:13px;
+}
+
+.post button{
+	padding: 6px 15px;
+	left: -8px;
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	border-radius: 40px;
+	margin-bottom: 20px;
+}
+
+.post button:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.buy {
+	padding: 6px 15px;
+	left: -8px;
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	border-radius: 40px;
+	margin-bottom: 20px;
+}
+
+.buy:hover {
+	background-color: yellow;
+	color: black;
+}
+
+/* Footer */
+
+footer {
+	background-color: white;
+	color: white;
+	text-align: center;
+	font-family: 'arial';
+	padding-top: 30px;
+}
+
+.containerFooter {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 10px;
+	margin: 10px;
+}
+
+.containerFooter .logo img {
+	width: 30px;
+	height: 30px;
+}
+
+.containerFooter .logo h4 {
+	color: maroon;
+}
+
+.containerFooter .pembayaran h4 {
+	color: maroon;
+}
+
+.mediaSosial h4 {
+	color: maroon;
+}
+
+.mediaSosial img {
+	display: inline;
+	align-items: center;
+	padding: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+
+	form {
+		display: inline;
+	}
+
+	.palingLaku {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 30px;
+		background-color: maroon;
+	}
+
+	.palingLaku .pict img {
+		width: 250px;
+		height: 250px;
+		margin-left: 30px;
+
+	}
+
+	.palingLaku h1 {
+		font-size: 40px;
+	}
+
+	.palingLaku h4 {
+		font-size: 20px;
+	}
+
+	.containerFooter {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		gap: 10px;
+		margin: 10px;
+	}
+
+	.pembayaran table {
+		width: 350px;
+		height: 200px;
+		margin: auto;
+
+	}
+
+	.mediaSosial img {
+		display: inline;
+		align-items: center;
+		padding: 10px;
+		width: 60px;
+		height: 60px;
+	}
+
+	.containerFooter .logo h4 {
+		display: block;
+	}
+
+	.containerFooter .pembayaran h4 {
+		font-weight: lighter;
+	}
+
+	.mediaSosial h4 {
+		font-weight: lighter;
+	}
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+
+	.menu-toggle {
+		display: flex;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	nav h2 ul a {
+		display: none;
+	}
+
+	nav ul {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		flex-direction: column;
+		height: 100vh;
+		background-color: maroon;
+		border-radius: 10px;
+		align-items: center;
+		justify-content: space-evenly;
+		z-index: -1;
+		transform: translateX(0%);
+		transition: all 1s;
+		opacity: 0;
+	}
+
+	nav ul.slide {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.BannerGambar {
+		margin-top: 10px;
+	}
+
+	.header h3 {
+		font-size: 40px;
+		padding: 2px;
+	}
+
+	.header h6 {
+		font-size: 20px;
+	}
+
+	form {
+		display: inline;
+		width: min-content;
+	}
+
+	.services {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 10px;
+		margin: 10px;
+	}
+
+	.palingLaku {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 30px;
+		background-color: maroon;
+	}
+
+	.palingLaku .pict img {
+		width: 200px;
+		height: 200px;
+		margin-left: 20px;
+
+	}
+
+	.palingLaku h1 {
+		font-size: 40px;
+	}
+
+	.palingLaku h4 {
+		font-size: 20px;
+	}
+
+	.containerFooter {
+		display: grid;
+		grid-template-columns: auto;
+		gap: 10px;
+		margin: 10px;
+	}
+
+	.pembayaran table {
+		width: 350px;
+		height: 200px;
+		margin: auto;
+
+	}
+
+	.mediaSosial img {
+		display: inline;
+		align-items: center;
+		padding: 10px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.containerFooter .logo h4 {
+		display: none;
+	}
+
+	.containerFooter .pembayaran h4 {
+		font-weight: lighter;
+	}
+
+	.mediaSosial h4 {
+		font-weight: lighter;
+	}
+}
